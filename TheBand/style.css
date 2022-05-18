@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+
+}
+.search{
+    float:right;
+    line-height: 46px;
+    padding: 0 21px;
+}
+#header .search:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav .subnav{
+    min-width: 160px;
+    display: none;
+    position :absolute;
+    background-color: white;
+    box-shadow: 0px 0px 15px;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav a{
+    padding: 0 16px;
+}
+#nav .subnav li {
+    width: 100%;
+    color: black;
+}
+#nav .subnav li a{
+    color: black;
+}
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+#nav > li > a{
+    text-transform: uppercase;
+    
+}
+i{
+    margin-left: 10px;
+    color: white;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+#nav > li:hover > a{
+    
+    color: black;
+    background-color: gray;
+}
+#slider{
+    padding-top: 50%;
+    margin-top: 46px;
+    min-height: 500px;
+    background-image: url(./image/slide1.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.text-content{
+    position: absolute;
+    width: 100%;
+    bottom: 47px;
+    color: white;
+    text-align: center;
+}
+#content{
+}
+.content-section{
+    width: 800px;
+    margin: auto;
+    padding: 64px 0;
+}
+.section-heading{
+    letter-spacing: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.section-sub-heading{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+.about-text{
+    text-align: justify;
+}
+.team-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.menber > p{
+    padding: 10px;
+}
+.menber .imagemenber img{
+    border: 15px solid transparent;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.imagemenber img:hover{
+    border-color: #ccc;
+    opacity: 1;
+   
+}
+.menber{
+    margin: 30px;
+}
+.bg-section{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.ul-tickets{
+    background-color: white;
+    color: rgb(141, 134, 134);
+    list-style-type: none;
+}
+.ul-tickets li{
+    border: 1px ridge;
+    padding: 10px;
+}
+.Sold-out{
+    background-color: orangered;
+    color: white;
+    padding: 3px;
+}
+.Sold-out-3{
+    color: white;
+    background-color: black;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+}
+.Ticket{
+    margin-top: 20px;
+    background-color: white;
+    width: 250px;
+    color: black;
+    margin-right: 25px;
+}
+.Ticket img:hover{
+    opacity: 0.7;
+}
+.ticket-img{
+    margin-bottom: 20px;
+}
+.ticket-name{
+    margin: 20px;
+}
+.ticket-date{
+    margin: 20px;
+}
+.ticket-content{
+    margin: 20px;
+}
+.btn-ticket{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+  
+}
+.btn-ticket:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+.contact-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-input{
+    padding: 10px;
+    margin: 5px;
+}
+.form-input-message{
+    padding: 10px;
+    width: 388px;
+    margin: 5px;
+}
+.form-contact{
+    margin-left: 247px;
+}
+.btn-form{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    float: right;
+    margin: 5px;
+}
+.address-contact ul{
+    list-style-type: none;
+}
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal.active{
+    display: flex;
+
+}
+.modal-container{
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+    animation: modalFadeIn ease 0.7s;
+}
+.modal-header{
+    background-color: #009688!important;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+}
+.modal-body{
+    padding: 20px;
+}
+.modal-label{
+    margin: 10px;
+    display: block;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+}
+#btn-buy-ticket{
+    width: 100%;
+    padding: 20px;
+    background-color: #009688;
+    border: none;
+    color: white;
+    margin: 20px 0;
+}
+.map-section{
+}
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#footer{}
